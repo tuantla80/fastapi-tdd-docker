@@ -3,7 +3,6 @@ from fastapi import APIRouter
 from app.api import crud
 from app.models.pydantic import SummaryPayloadSchema, SummaryResponseSchema
 
-
 router = APIRouter()
 
 
