@@ -24,7 +24,6 @@ def test_app():
     # tear down
 
 
-# new
 @pytest.fixture(scope="module")
 def test_app_with_db():
     # set up
@@ -42,3 +41,4 @@ def test_app_with_db():
         yield test_client
 
     # tear down
+
