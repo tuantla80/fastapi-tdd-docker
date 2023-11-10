@@ -61,4 +61,3 @@ async def delete_summary(id: int = Path(..., gt=0)) -> SummaryResponseSchema:
     await crud.delete(id)
 
     return summary
-

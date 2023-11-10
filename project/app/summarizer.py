@@ -19,4 +19,3 @@ async def generate_summary(summary_id: int, url: str) -> None:
     summary = article.summary
 
     await TextSummary.filter(id=summary_id).update(summary=summary)
-
