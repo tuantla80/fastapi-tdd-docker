@@ -220,4 +220,3 @@ def test_update_summary_invalid(
     response = test_app.put(f"/summaries/{summary_id}/", data=json.dumps(payload))
     assert response.status_code == status_code
     assert response.json()["detail"] == detail
-

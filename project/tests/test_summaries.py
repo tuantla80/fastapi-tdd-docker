@@ -223,4 +223,3 @@ def test_update_summary_invalid_url(test_app):
     )
     assert response.status_code == 422
     assert response.json()["detail"][0]["msg"] == "URL scheme not permitted"
-
